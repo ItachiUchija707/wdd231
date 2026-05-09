@@ -11,4 +11,6 @@ menuButton.addEventListener("click", () => {
     navigationBar.classList.toggle("hide");
 });
 
+const daysUntil = `There are ${daycount} days until ${targetEvent}!`;
+
 
