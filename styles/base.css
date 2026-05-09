@@ -89,7 +89,6 @@ header img {
 
 .navigation a:hover {
     background-color: var(--blush-rose);
-    color: var(--primary-text);
 }
 
 .navigation .current {
