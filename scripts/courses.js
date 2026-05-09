@@ -172,11 +172,6 @@ function CreateCoursesTabs(coursesArray) {
 
 
 window.addEventListener("DOMContentLoaded", () => {
-
-    const sectionTitle = document.createElement("h2");
-    sectionTitle.textContent = `Web Certificate Courses`;
-    coursesSection.appendChild(sectionTitle);
-
     const filters = document.createElement("div");
     const allCourses = document.createElement("h3");
     const cseCourses = document.createElement("h3");
