@@ -1,15 +1,15 @@
 * {
     box-sizing: border-box;
     font-family: var(--text-font);
-    /* border: solid 2px red; */
 }
 
 :root {
-    --primary-background: #22181C;
+    --primary-text: #22181C;
     --text-color: #F9F9F9;
     --verdigris: #1B998B;
     --dim-gray: #747274;
-    --blush-rose: #DB5375;
+    --second-gray: #9a989a;
+    --blush-rose: #c83c64;
     --text-font: "Rubik", sans-serif;
     --headings-text: "Ubuntu", sans-serif;
 }
@@ -24,8 +24,12 @@ header {
     align-items: center;
     padding: 5px 0px 5px 10px;
     margin-right: 5px;
-    border-bottom: solid var(--text-color) 1px;
     font-family: var(--headings-text);
+    width: 100%;
+}
+
+.show-border {
+    border-bottom: 2px solid var(--dim-gray);
 }
 
 header img {
@@ -42,11 +46,11 @@ header img {
 }
 
 #ham-btn::before {
-    content: "\2630";
+    content: "\00D7";
 }
 
 #ham-btn.show::before {
-    content: "\00D7";
+    content: "\2630";
 }
 
 /* ***************** navigation bar ********************* */
@@ -62,14 +66,13 @@ header img {
     justify-content: space-around;
     margin: 0;
     padding: 0;
-    /* border-top: 1px solid var(--primary-background); */
-    border: 1px solid var(--primary-background);
+    border: 1px solid var(--primary-text);
 }
 
 .navigation li {
     background: var(--dim-gray);
     width: 100%;
-    border: 1px solid var(--primary-background);
+    border: 1px solid var(--primary-text);
 }
 
 .navigation a {
@@ -79,19 +82,163 @@ header img {
     height: 44px;
     align-items: center;
     color: var(--text-color);
+    font-size: 1.2rem;
+    font-family: var(--headings-text);
+    font-weight: 500;
 }
 
 .navigation a:hover {
     background-color: var(--blush-rose);
-    color: var(--primary-background);
+    color: var(--primary-text);
+}
+
+.navigation .current {
+    border-left: 10px solid var(--primary-text);
+}
+
+/* ************** about me section styling ********** */
+h1 {
+    margin-left: 10px;
+    font-family: var(--headings-text);
+}
+
+.about {
+    border: 1px solid var(--verdigris);
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.about h2 {
+    font-family: var(--headings-text);
+    text-align: center;
+    margin-top: 0px;
+    background-color: var(--verdigris);
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    padding: 15px 20px 15px 20px;
+}
+
+.about p {
+    margin-top: 0;
+    padding: 10px;
+}
+
+
+/* student photo section */
+.student {
+    border: 1px solid var(--verdigris);
+    margin: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.student h2 {
+    text-align: center;
+    border-radius: 8px 8px 0px 0px;
+    background-color: var(--verdigris);
+    padding: 15px 20px 15px 20px;
+    margin-top: 0px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.student div {
+    display: grid;
+    place-items: center;
+    height: 400px;
+}
+
+.student img {
+    width: 80%;
+    border: 3px solid var(--dim-gray);
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* ************** courses section styling ************** */
+
+.courses {
+    border: 1px solid var(--verdigris);
+    border-radius: 8px;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.courses h2 {
+    text-align: center;
+    background-color: var(--verdigris);
+    font-family: var(--headings-text);
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 15px 20px 15px 20px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.courses div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.courses h3 {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-family: var(--headings-text);
+    background-color: var(--second-gray);
+    width: 25%;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.courses ul {
+    list-style: none;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+}
+
+.courses li {
+    text-align: center;
+    width: 75%;
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--second-gray);
+    border-radius: 8px;
+    color: var(--text-color);
+}
+
+.courses .completed {
+    background-color: var(--blush-rose);
+}
+
+.courses .incomplete {
+    color: var(--primary-text);
+}
+
+.courses .clicked {
+    background-color: var(--verdigris);
+}
+
+.courses p {
+    text-align: center;
 }
 
 /* ******************* footer styling ******************** */
 footer {
     display: grid;
     margin-top: 10px;
-    border: solid 2px var(--dim-gray);
     text-align: center;
+}
+
+.footer-text {
+    border: solid 2px var(--second-gray);
+    background-color: var(--dim-gray);
+    color: var(--text-color);
+    font-size: 1.2rem;
 }
 
 .social-media {

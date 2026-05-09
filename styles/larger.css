@@ -22,4 +22,85 @@
     .navigation ul {
         flex-wrap: nowrap;
     }
+
+    .navigation .current {  
+    border-left: 15px solid var(--primary-text);
 }
+
+    /* main section styling */
+
+    main {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    h1 {
+        grid-column: 1 / 3;
+        margin: 15px 5px 10px 5px;
+    }
+
+    section {
+        margin: 0;
+    }
+
+    .student {
+        margin-top: 10px;
+    }
+
+    .student img:hover {
+        transform: scale(1.1);
+    }
+
+    .courses {
+        grid-column: 1 / 3;
+    }
+
+    .courses h3 {
+        padding: 10px;
+    }
+
+    .courses li {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+    }
+
+    
+}
+
+
+.courses div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* .courses h3 {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-family: var(--headings-text);
+    background-color: var(--second-gray);
+    width: 25%;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.courses ul {
+    list-style: none;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+}
+
+.courses li {
+    text-align: center;
+    width: 75%;
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--second-gray);
+    border-radius: 8px;
+    color: var(--text-color);
+} */

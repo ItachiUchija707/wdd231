@@ -14,7 +14,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-    <script src="scripts/developer.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
     <title>Axzam Bendeck - Software Developer</title>
 </head>
 
@@ -22,7 +24,7 @@
     <header>
         <img src="images/site-logo.svg" alt="coding logo" width="48" height="48">
         <span>Axzam Bendeck - Software Developer</span>
-        <button id="ham-btn" class=""></button>
+        <button id="ham-btn" class="" aria-label="close & open button"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
@@ -32,20 +34,44 @@
         </ul>
     </nav>
     <main>
-        <p></p>
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I am a current BYU-Pathway Worldwide student pursuing a Software Development degree, with over 6 years of
+                experience in customer service and a proven track record in
+                leadership roles. My career has been built on dedication, consistency, honesty, and coaching skills,
+                qualities that helped me earn promotions to Supervisor positions at
+                both Xfinity and Humana. Throughout my career, I have supported accounts such as Xfinity (Technical
+                Support), Lyft (Critical Response Line), and Humana (Customer Service),
+                where I consistently delivered high-impact results, guided teams, and enhanced the customer experience.
+                These experiences strengthened my problem-solving, communication, and
+                technical skills, which I now aim to apply in the software development field. I am passionate about
+                bridging my customer service expertise with technology, adding value
+                to projects through empathy, attention to detail, and leadership. My goal is to contribute to the tech
+                industry while continuing to learn and grow as a developer.</p>
+        </section>
+        <section class="student">
+            <h2>Student Photo</h2>
+            <div>
+                <img src="images/profile.jpg" alt="Axzam Bendeck">
+            </div>
+
+        </section>
+        <section id="courses" class="courses">
+
+        </section>
     </main>
     <footer>
-        <div class="footer-text">
-            <p>©️<span id="currentYear"></span> Axzam Bendeck</p>
-            <p id="lastModified"></p>
-        </div>
         <div class="social-media icons">
             <a href="https://github.com/ItachiUchija707"><img src="images/github.svg" alt="github icon"></a>
             <a href="https://linkedin.com/in/axzambendeck"><img src="images/linkedin.svg" alt="linkedin icon"></a>
             <a href="https://wa.me/50496689073"><img src="images/whatsapp.svg" alt="whatsapp icon"></a>
         </div>
+        <div class="footer-text">
+            <p>© <span id="currentYear"></span> Axzam Bendeck</p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 </body>
 
 </html>
-
