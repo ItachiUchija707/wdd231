@@ -1,0 +1,29 @@
+{
+    "family_name": "Johnson",
+    "moved_in_Date": "05/15/2026",
+    "visited by bishopric": false,
+    "number_of_members": 4,
+    "family_members": [
+    {
+        "name": "Mark",
+        "gender": "male",
+        "birthdate": "05/15/1980"
+    },
+    {
+        "name": "Sarah",
+        "gender": "female",
+        "birthdate": "04/15/1980"
+    },
+    {
+        "name": "Tommy",
+        "gender": "male",
+        "birthdate": "05/15/2009"
+    },
+    {
+        "name": "Jessica",
+        "gender": "female",
+        "birthdate": "06/15/2015"
+    }
+    ]
+    
+}

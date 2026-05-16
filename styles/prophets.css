@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text-font);
+}
+
+:root {
+    --text-font: "Rubik", sans-serif;
+    --headings-text: "Ubuntu", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--headings-text);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    place-items: center;
+}
+
+.cards section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #9b99a59c;
+    border: 1px solid #3d1fce9c;
+    width: 350px;
+    height: 400px;
+}
+
+.cards h2 {
+    padding-top: 5px;
+    font-family: var(--headings-text);
+}
+
+.cards img {
+    border: 3px solid #17061a9c;
+}
