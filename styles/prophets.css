@@ -20,6 +20,7 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
     place-items: center;
+    padding: 10px;
 }
 
 .cards section {
