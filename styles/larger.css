@@ -47,6 +47,10 @@
         margin-top: 10px;
     }
 
+    .student img {
+        width: 80%;
+    }
+
     .student img:hover {
         transform: scale(1.1);
     }

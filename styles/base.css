@@ -148,10 +148,10 @@ h1 {
 }
 
 .student img {
-    width: 80%;
+    width: 70%;
     border: 3px solid var(--dim-gray);
-    object-fit: contain;
     border-radius: 8px;
+    max-height: 90%;
 }
 
 /* ************** courses section styling ************** */
