@@ -18,7 +18,7 @@ h1 {
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
+    gap: 20px;
     place-items: center;
 }
 
@@ -39,4 +39,11 @@ h1 {
 
 .cards img {
     border: 3px solid #17061a9c;
+}
+
+footer {
+    text-align: center;
+    border-top: 3px solid #3d1fce9c;
+    margin-top: 20px;
+    padding: 20px;
 }
