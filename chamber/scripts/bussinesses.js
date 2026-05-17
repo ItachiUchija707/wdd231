@@ -28,8 +28,8 @@ const createBusinessCards = (businesses) => {
                 <h2>${business.company_name}</h2>
                 <img src="${business.image_extension}" alt="" width="200" height="150" loading="lazy">
                 <span>${business.services_offered}</span>
-                <address>${business.addresses.street} ${business.addresses.ward} ${business.addresses.city}<br>
-                ${business.addresses.zip} ${business.addresses.state}<br>
+                <address>${business.addresses.street} ${business.addresses.ward}<br>
+                ${business.addresses.city} ${business.addresses.zip} ${business.addresses.state}<br>
                 +504-${business.phone_number}
                 </address>
                 <a href="${business.url}">${business.url}</a>
