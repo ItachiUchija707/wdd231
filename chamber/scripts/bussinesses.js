@@ -8,21 +8,29 @@ const listDisplay = document.querySelector("#list");
 
 
 async function getBusinessesData() {
-    const response = await fetch(businessesData);
-    const data = await response.json();
-    createBusinessCards(data.chamber_businesses);
+    try {
+        const response = await fetch(businessesData);
+        const data = await response.json();
+        createBusinessCards(data.chamber_businesses);
+    }
+
+    catch (error) {
+        console.error("Error fetching directory data:", error);
+    }
+    
 }
 
 const createBusinessCards = (businesses) => {
     businessesContainer.innerHTML = "";
-    const businessesArray = businesses;
-    businessesArray.forEach((business) => {
+    const listView = businessesContainer.classList.contains("list");
+
+    businesses.forEach((business) => {
         const businessSection = document.createElement("section");
         businessSection.setAttribute("class", "business");
 
         // button modifications
 
-        if (businessesContainer.classList == "directory") {
+        if (!listView) {
             businessSection.innerHTML =
                 `
                 <h2>${business.company_name}</h2>
@@ -38,7 +46,7 @@ const createBusinessCards = (businesses) => {
             businessesContainer.appendChild(businessSection);
         }
 
-        else if (businessesContainer.classList == "list") {
+        else {
             businessSection.innerHTML =
                 `
                 <h2>${business.company_name}</h2>
@@ -55,27 +63,13 @@ const createBusinessCards = (businesses) => {
 
 getBusinessesData();
 gridDisplay.addEventListener("click", () => {
-    if (businessesContainer.classList == "directory") {
-        businessesContainer.classList.remove("list");
-        getBusinessesData();
-    }
-
-    else {
-        businessesContainer.classList.add("directory");
-        businessesContainer.classList.remove("list");
-        getBusinessesData();
-    }
+    businessesContainer.classList.add("directory");
+    businessesContainer.classList.remove("list");
+    getBusinessesData();
 })
 
 listDisplay.addEventListener("click", () => {
-    if (businessesContainer.classList == "list") {
-        businessesContainer.classList.remove("directory");
-        getBusinessesData();
-    }
-
-    else {
-        businessesContainer.classList.add("list");
-        businessesContainer.classList.remove("directory");
-        getBusinessesData();
-    }
+    businessesContainer.classList.add("list");
+    businessesContainer.classList.remove("directory");
+    getBusinessesData();
 })
