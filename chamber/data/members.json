@@ -1,0 +1,123 @@
+{
+    "chamber": "Tegucigalpa",
+    "chamber_businesses": 
+    [
+        { 
+            "company_name": "Toro Bravo",
+            "addresses": {
+                "street": "2nd Entrance",
+                "ward": "Keneddy",
+                "city": "Tegucigalpa", 
+                "zip": "11011",
+                "state": "Francisco Morazán"
+            },
+            "phone_number": "96000555",
+            "url": "https://torobravo.com",
+            "image_extension": "https://scontent.ftgu1-2.fna.fbcdn.net/v/t39.30808-6/484161013_1021216183441467_4269686270190093572_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeGuih_a_05Qq7Mx76o1QvqIt8w7N2GgwZ63zDs3YaDBnkK0bdO779zwzmb_O6HFZklaTMc2gf_ZsApEcLuqWEC0&_nc_ohc=YSYEb4yLIjoQ7kNvwH3t3YR&_nc_oc=Adp1S0bWJGRmyy4aK0SLoSD9LXDER86tc5Br9ABptuIwFfKuU5QqTO5XN69Ke-J5rys&_nc_zt=23&_nc_ht=scontent.ftgu1-2.fna&_nc_gid=6OgiAQvQqmyGLABl0Ty0YA&_nc_ss=7c2a8&oh=00_Af42-YYRHN1LCquNhAoYb9IED_Fk06jK-bGnwQ4Hih_05Q&oe=6A0E7DD5",
+            "membership_level": "member",
+            "google_maps_link": "https://maps.app.goo.gl/BCBp7uZyTy3zhDCf9", 
+            "services_offered": "Food and delivery services"
+        },
+        {   
+            "company_name": "María Pizza",
+            "addresses": {
+                "street": "2nd entrance 1st St",
+                "ward": "La Pilona",
+                "city": "Tegucigalpa", 
+                "zip": "11011",
+                "state": "Francisco Morazán"
+            },
+            "phone_number": "92047465",
+            "url": "https://mariapizza.com",
+            "image_extension": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.HCd2qbcmwiJZU3y4E10ICwHaFL%3Fpid%3DApi&f=1&ipt=52fd42788b2a0d24cb20e1be19411ef51bbca4b2744e9ff4c556069a5b7096db&ipo=images",
+            "membership_level": "member",
+            "google_maps_link": "https://maps.app.goo.gl/2D4EgpN8UrBKxgYr8",
+            "services_offered": "Food and delivery services"
+        },
+
+                {   
+            "company_name": "La Casa de la Abuelita",
+            "addresses": {
+                "street": "32 St peatonal",
+                "ward": "Torocagua",
+                "city": "Tegucigalpa", 
+                "zip": "11011",
+                "state": "Francisco Morazán"
+            },
+            "phone_number": "31981152",
+            "url": "https://lacasadelaabuelita.com",
+            "image_extension": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia-cdn.tripadvisor.com%2Fmedia%2Fphoto-s%2F28%2Fcb%2Fa5%2F02%2Fexterior-del-local.jpg&f=1&nofb=1&ipt=33eb981430e5c8009c9907bc987a68d8a19eb759526411f03b6216fe2621f543",
+            "membership_level": "gold",
+            "google_maps_link": "https://maps.app.goo.gl/TeBQb5Tbg6Zsg7ydA",
+            "services_offered": "Food and delivery services"
+        },
+
+        {   
+            "company_name": "Cerro Juana Laínez",
+            "addresses": {
+                "street": "1st St Juana Laínez",
+                "ward": "Barrio Suyapa",
+                "city": "Tegucigalpa", 
+                "zip": "11101",
+                "state": "Francisco Morazán"
+            },
+            "phone_number": "94108045",
+            "url": "https://www.cerrojuanalainez.com/",
+            "image_extension": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdiarioroatan.com%2Fwp-content%2Fuploads%2F2018%2F02%2Fparque3.jpg&f=1&nofb=1&ipt=9cfee4cd84014e6d70908bb2388cc521adab89655677e7ee4682506b2ca6e6f4",
+            "membership_level": "member",
+            "google_maps_link": "https://maps.app.goo.gl/BCBp7uZyTy3zhDCf9", 
+            "services_offered": "Recreational activities & Event Hosting services"
+        },
+
+        {   
+            "company_name": "Malibú Nails Studio",
+            "addresses": {
+                "street": "2nd St carrizal",
+                "ward": "Colonia Carrizal #2",
+                "city": "Comayagüela", 
+                "zip": "11101",
+                "state": "Francisco Morazán"
+            },
+            "phone_number": "93987759",
+            "url": "https://malibunailsstudio.com",
+            "image_extension": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.ATiOB2652BuYk5-JCUpD5wHaHa%3Fr%3D0%26pid%3DApi&f=1&ipt=78a367f6b562c88680f6ddcd8af39a88fe9a36e60ca67d8cbf427606c19f73b9&ipo=images",
+            "membership_level": "gold",
+            "google_maps_link": "https://maps.app.goo.gl/RASgnotf5cdwJymB6",
+            "services_offered": "Professional nail and makeup services"
+        }, 
+
+                {   
+            "company_name": "Barber BRO'S",
+            "addresses": {
+                "street": "12101 St Comayagüela",
+                "ward": "San Matias",
+                "city": "Comayagüela", 
+                "zip": "11011",
+                "state": "Francisco Morazán"
+            },
+            "phone_number": "32794920",
+            "url": "https://barberbros.com",
+            "image_extension": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbarber-bros.com%2Fnagahori%2Fimg%2Fmain-image%2Fimage_05.jpg&f=1&nofb=1&ipt=ee60090b1bca36520320ec561c7d65baccf55326bc84db57b3025577f30f8eea",
+            "membership_level": "silver",
+            "google_maps_link": "https://maps.app.goo.gl/ufSspv325w7RouRe8",
+            "services_offered": "Barber services for men"
+        }, 
+
+                {   
+            "company_name": "Repostería Sandra",
+            "addresses": {
+                "street": "12th La Esperanza Avenue",
+                "ward": "San Miguel",
+                "city": "Tegucigalpa", 
+                "zip": "11011",
+                "state": "Francisco Morazán"
+            },
+            "phone_number": "31946532",
+            "url": "https://reposteriasandra.com",
+            "image_extension": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgrandesemprendedores.hn%2Fwp-content%2Fuploads%2F2025%2F03%2FReposteria-Sandra-inaugu4.jpg&f=1&nofb=1&ipt=3c48ed6f59f5623b32065fd951c7a0488a698b0fd325b03ef7a4230e9b330363",
+            "membership_level": "silver",
+            "google_maps_link": "https://maps.app.goo.gl/Xu2XSuw7HwVbSHvYA", 
+            "services_offered": "Bakery & Events Hosting"
+        }
+    ]
+}

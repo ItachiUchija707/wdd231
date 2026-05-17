@@ -1,0 +1,263 @@
+:root {
+    --text-color1: #3A3335;
+    --text-color2: #FDF0D5;
+    --text-color3: #C6D8D3;
+    --background-color1: #3A3335;
+    --background-color2: #D81E5B;
+    --text-font: "Rubik", sans-serif;
+    --headings-text: "Ubuntu", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--text-font);
+}
+
+.mobile-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 2px;
+    height: 50px;
+}
+
+.show-border .mobile-header {
+    border-bottom: 1px solid var(--background-color1);
+    padding-bottom: 5px;
+}
+
+.mobile-header img {
+    width: 16px;
+    height: 16px;
+    border: 3px solid var(--text-color3);
+    align-self: center;
+    margin-left: 5px;
+}
+
+.mobile-header span {
+    align-self: center;
+    font-family: var(--headings-text);
+}
+
+.mobile-header button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 2.6rem;
+    position: absolute;
+    right: 8px;
+    padding: 1px;
+    top: 1px;
+}
+
+#ham-btn::before {
+    content: "\00D7";
+}
+
+#ham-btn.show::before {
+    content: "\2630";
+}
+
+/* ************ navigation bar ************* */
+
+.navigation.hide {
+    display: none;
+}
+
+.navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--primary-text);
+}
+
+.navigation li {
+    background: var(--background-color1);
+    width: 100%;
+    border: 1px solid var(--text-color3);
+}
+
+.navigation a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    height: 44px;
+    align-items: center;
+    color: var(--text-color3);
+    font-size: 1.2rem;
+    font-family: var(--headings-text);
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    background-color: var(--background-color2);
+}
+
+.navigation .current {
+    border-left: 10px solid var(--text-color3);
+}
+
+/* ************* main section styling ********* */
+
+main h1 {
+    font-family: var(--headings-text);
+    padding: 0;
+    margin-top: 8px;
+}
+
+main picture img {
+    border: 5px solid var(--background-color1);
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.grid-list {
+    background-color: var(--background-color1);
+    padding: 15px;
+    width: 93%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.grid-list button {
+    padding: 10px;
+    width: 50%;
+    background-color: var(--background-color2);
+    color: #fafafa;
+    font-weight: 800;
+    font-family: var(--headings-text);
+    font-size: 1.2rem;
+}
+
+/* ************** bussiness cards styling ********** */
+
+/* grid view */
+
+.directory {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    place-items: center;
+}
+
+.directory section {
+    display: grid;
+    place-items: center;
+    background-color: var(--text-color3);
+    width: 93%;
+    border: 3px solid var(--background-color1);
+    padding-bottom: 10px;
+}
+
+.directory h2 {
+    font-family: var(--headings-text);
+    padding: 10px;
+}
+
+.directory img {
+    border: 2px solid var(--text-color1);
+    width: 50%;
+    height: auto;
+}
+
+.directory span {
+    padding-top: 3px;
+}
+
+.directory address {
+    padding-top: 5px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.directory section a {
+    padding: 10px;
+}
+
+.directory section p {
+    text-align: center;
+    padding: 10px;
+}
+
+/* list view */
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 93%;
+    margin: 0 auto;
+}
+
+.list .business:nth-child(odd) {
+    background-color: var(--text-color3);
+}
+
+.list section {
+    display: grid;
+    font-size: 0.8rem;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.list h2 {
+    font-family: var(--headings-text);
+    font-size: 1rem;
+    margin-right: 5px;
+    align-self: center;
+    padding: 5px;
+}
+
+.list section span {
+    font-weight: 500;
+}
+
+.list address {
+    padding: 5px;
+}
+
+
+/* ****************** footer styling ************ */
+
+footer {
+    display: grid;
+    place-items: center;
+    padding-top: 20px;
+    border-top: 3px solid var(--background-color1);
+    margin-top: 30px;
+    gap: 20px;
+    background-color: var(--text-color2);
+    color: var(--background-color1);
+}
+
+.icons {
+    transform: scale(3);
+    padding: 20px;
+    padding-bottom: 15px;
+}
+
+.demographics {
+    text-align: center;
+}
+
+.demographics p {
+    padding-bottom: 5px;
+    transform: scale(1.1);
+}
+
+.footer-text {
+    text-align: center;
+    padding-bottom: 10px;
+}
