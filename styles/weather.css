@@ -1,0 +1,23 @@
+* {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    border: 2px solid #1f9177;
+    max-width: 500px;
+    margin-bottom: 60vh;
+}
+
+main p {
+    font-size: 1.2rem;
+}
+
+main span {
+    color: #1f9177;
+}
+
+main figcaption {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
