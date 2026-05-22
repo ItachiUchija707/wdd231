@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Tegucigalpa - check our local businesses and organizations. Learn about the services that they offer">
+        content="Tegucigalpa Chamber of Commerce - Learn about our upcoming events, meet our entrepenours, and how to join our organization">
     <meta name="author" content="Axzam Bendeck">
-    <meta property="og:title" content="Tegucigalpa's chamber of commerce directory">
+    <meta property="og:title" content="Tegucigalpa Chamber of Commerce">
     <meta property="og:description"
         content="Tegucigalpa - check our local businesses and organizations. Learn about the services that they offer">
     <meta property="og:image" content="https://itachiuchija707.github.io/wdd231/chamber/images/hero-large.webp">
-    <meta property="og:url" content="https://itachiuchija707.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://itachiuchija707.github.io/wdd231/chamber/index.html">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -23,8 +23,9 @@
         rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <script src="scripts/bussinesses.js" defer></script>
-    <title>Tegucigalpa Chamber of Commerce - Directory</title>
+    <title>Tegucigalpa Chamber of Commerce</title>
 </head>
 
 <body>
@@ -36,27 +37,38 @@
         </div>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="index.html">Home</a></li>
                 <li><a href="#">Discovery</a></li>
-                <li class="current"><a href="#">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <h1>Business Directory</h1>
+        <h1>Home</h1>
         <picture>
             <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
             <source srcset="images/hero-medium.webp" media="(min-width: 550px)">
             <img src="images/hero-small.webp" alt="" width="513" height="353">
         </picture>
-        <div class="grid-list">
-            <button id="grid" aria-label="display grid view button">Grid</button>
-            <button id="list" aria-label="display list view button">List</button>
-        </div>
-        <div id="directory" class="directory">
+        <button class="btn-join">Join Chamber</button>
+        <section class="events">
             
+        </section>
+        <section id="current-weather" class="current-weather">
+            <h2></h2>
+        </section>
+        <section id="forecast">
+            <h2></h2>
+        </section>
+        <div id="directory" class="directory">
+
+        </div>
+        <div>
+            <p>Joining our organization will help your business grow, you will access special benefits and be part of our amazing community. 
+            Click on learn more so you can learn about the perks we offered and our membership levels</p>
+            <button class="btn-learn" aria-label="learn more button">Learn More</button>
         </div>
     </main>
     <footer>

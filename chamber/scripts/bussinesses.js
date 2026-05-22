@@ -5,13 +5,22 @@ const businessesContainer = document.querySelector("#directory");
 const gridDisplay = document.querySelector("#grid");
 const listDisplay = document.querySelector("#list");
 
-
+const page = document.querySelector(".current");
 
 async function getBusinessesData() {
     try {
         const response = await fetch(businessesData);
         const data = await response.json();
-        createBusinessCards(data.chamber_businesses);
+        const businessArray = data.chamber_businesses;
+        if (page.textContent == "Home") {
+            createBusinessCards(businessArray.filter(business => business.membership_level.includes("silver") || business.membership_level.includes("gold")));
+            ;
+        }
+
+        else {
+            createBusinessCards(businessArray);
+        }
+        
     }
 
     catch (error) {
