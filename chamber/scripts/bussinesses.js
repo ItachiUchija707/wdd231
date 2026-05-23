@@ -12,8 +12,11 @@ async function getBusinessesData() {
         const response = await fetch(businessesData);
         const data = await response.json();
         const businessArray = data.chamber_businesses;
+
         if (page.textContent == "Home") {
-            createBusinessCards(businessArray.filter(business => business.membership_level.includes("silver") || business.membership_level.includes("gold")));
+            const filteredBusinesses = businessArray.filter(business => business.membership_level.includes("silver") || business.membership_level.includes("gold"));
+            const randomArray = [...filteredBusinesses].sort(() => 0.5 - Math.random());
+            createBusinessCards(randomArray.slice(0, randomArray.length - 1))
             ;
         }
 
@@ -37,13 +40,28 @@ const createBusinessCards = (businesses) => {
         const businessSection = document.createElement("section");
         businessSection.setAttribute("class", "business");
 
-        // button modifications
-
-        if (!listView) {
+        if (page.textContent == "Home") {
             businessSection.innerHTML =
                 `
                 <h2>${business.company_name}</h2>
-                <img src="${business.image_extension}" alt="" width="200" height="150" loading="lazy">
+                <img src="${business.image_extension}" alt="" width="200" height="150" loading="lazy" crossorigin="anonymous">
+                <span>${business.services_offered}</span>
+                <address>${business.addresses.street} ${business.addresses.ward}<br>
+                ${business.addresses.city} ${business.addresses.zip} ${business.addresses.state}<br>
+                +504-${business.phone_number}
+                </address>
+                <a href="${business.url}">${business.url}</a>
+                <p><span>${business.membership_level} Member</span></p>
+            `
+            businessesContainer.appendChild(businessSection);
+        }
+
+        else {
+            if (!listView) {
+                businessSection.innerHTML =
+                `
+                <h2>${business.company_name}</h2>
+                <img src="${business.image_extension}" alt="" width="200" height="150" loading="lazy" crossorigin="anonymous">
                 <span>${business.services_offered}</span>
                 <address>${business.addresses.street} ${business.addresses.ward}<br>
                 ${business.addresses.city} ${business.addresses.zip} ${business.addresses.state}<br>
@@ -53,10 +71,11 @@ const createBusinessCards = (businesses) => {
                 <p><a href="${business.google_maps_link}">Google Maps Location</a></p>
             `
             businessesContainer.appendChild(businessSection);
-        }
 
-        else {
-            businessSection.innerHTML =
+            }
+
+            else {
+                businessSection.innerHTML =
                 `
                 <h2>${business.company_name}</h2>
                 <span>${business.services_offered}</span>
@@ -66,12 +85,20 @@ const createBusinessCards = (businesses) => {
                 <a href="${business.url}">${business.url}</a>
             `
             businessesContainer.appendChild(businessSection);
+            }
         }
+
     });
 }
 
-getBusinessesData();
-gridDisplay.addEventListener("click", () => {
+
+if (page.textContent == "Home") {
+    getBusinessesData();
+}
+
+else {
+    getBusinessesData();
+    gridDisplay.addEventListener("click", () => {
     businessesContainer.classList.add("directory");
     businessesContainer.classList.remove("list");
     getBusinessesData();
@@ -82,3 +109,5 @@ listDisplay.addEventListener("click", () => {
     businessesContainer.classList.remove("directory");
     getBusinessesData();
 })
+}
+

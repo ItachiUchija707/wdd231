@@ -1,8 +1,8 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 42rem) {
 
     :root {
         --text-color1: #3A3335;
-        --text-color2: #FDF0D5;
+        --text-color2: #fafafa;
         --text-color3: #C6D8D3;
         --background-color1: #3A3335;
         --background-color2: #D81E5B;
@@ -16,7 +16,7 @@
     }
 
     main, footer {
-        max-width: 800px;
+        max-width: 1000px;
         margin: 0 auto;
     }
 
@@ -82,21 +82,28 @@
     }
 
     main picture img {
+        display: grid;
+        place-self: center;
+        max-width: 1200px;
         width: 100%;
         height: auto;
+        background-color: var(--background-color1);
     }
 
     .directory section {
+    padding: 10px;
     width: 93%;
     height: 400px;
     border: 3px solid var(--background-color1);
     padding-bottom: 10px;
+    word-break: break-word;
 }
 
     .directory section:last-child {
-        width: 413px;
+        width: auto;
         height: auto;
-        grid-column: 1 / 3;
+        grid-column: 1 / 4;
+        
     }
 
     .list section {
@@ -114,6 +121,107 @@
         grid-template-columns: 1fr 0.7fr 1fr;
         place-items: center;
         padding: 30px;
+    }
+
+    /* ************* home page styling ********* */
+
+    .hero-container div {
+        bottom: 12px;
+        right: 12px;
+    }
+
+    .btn-learn {
+        width: 300px;
+        font-size: 1.2rem;
+    }
+
+    .weather-events {
+        display: grid;
+        grid-template-columns: 1.8fr 1.2fr 1fr;
+        column-gap: 10px;
+        padding: 10px;
+    }
+
+    .events {
+        margin: 0;
+        width: 100%;
+        }
+
+    .events h2 {
+        max-height: 44px;
+    }
+
+    .events img {
+        width: 85%;
+        }
+
+    /* ******* weather section styling  *********** */
+
+    .current-weather {
+        width:100%;
+        margin: 0;
+        }
+
+    .current-weather img {
+        margin: 0 auto;
+        height: auto;
+        width: 100px;
+    }
+
+    .current-weather p {
+        width: auto;
+        text-align: center;
+        grid-row: 2 / 3;
+        line-height: 1.5;
+        word-break: break-all;
+        }
+
+    /* forecast section */
+
+    .forecast {
+        margin: 0;
+        width: 100%;
+    }
+
+    .forecast p {
+        text-align: center;
+        line-height: 3;
+    }
+
+    .forecast p span {
+        font-weight: 500;
+        }
+
+    /* ********** call to action section ********* */
+
+    .home {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .home section {
+        min-width: 180px;
+        max-width: 330px;
+        min-height: 300px;
+        max-height: 500px;
+        word-break: break-word;
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+
+    .home section img {
+        width: 50%;
+        height: auto;
+    }
+
+    .home section:last-child {
+        grid-column: 3;
+        min-width: 180px;
+        max-width: 330px;
+        min-height: 400px;
+        width: 100%;
     }
 
 }

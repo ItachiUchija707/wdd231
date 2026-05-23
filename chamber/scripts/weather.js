@@ -2,7 +2,7 @@ const myWeather = document.querySelector("#current-weather");
 const myForecast = document.querySelector("#forecast");
 const dtoday = new Date();
 const todayIndex = dtoday.getDay();
-const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Monday"];
 
 // variables to get information from API
 const myApiKey = "838ea48cfc01a39015948e0e4bf1d481";
@@ -44,15 +44,15 @@ function createWeatherCards(weatherData, forecastData) {
     myForecast.innerHTML = "";
 
     // variables to handle sunrise and sunset times formatting
-    const sunset = dtoday.setTime(weatherData.sys.sunset);
-    const sunrise = dtoday.setTime(weatherData.sys.sunrise);
+    const sunset = dtoday.setTime(weatherData.sys.sunset * 1000);
+    const sunrise = dtoday.setTime(weatherData.sys.sunrise *1000);
 
     const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`;
     const weatherCondition = weatherData.weather[0].description;
     myWeather.innerHTML = 
     `
-        <h2>${weatherData.name}'s Current Weather</h2>
-        <img src="${iconsrc}" alt="${weatherData.weather[0].description} icon">
+        <h2>Current Weather</h2>
+        <img src="${iconsrc}" alt="${weatherData.weather[0].description} icon" crossorigin="anonymous">
         <p>
             <span>${weatherData.main.temp}&deg;C</span><br>
             ${weatherData.weather[0].description}<br>
@@ -76,3 +76,5 @@ function createWeatherCards(weatherData, forecastData) {
 }
 
 getWeatherData()
+
+// resolve day issue

@@ -47,29 +47,33 @@
     
     <main>
         <h1>Home</h1>
-        <picture>
+        <div class="hero-container">
+            <picture>
             <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
             <source srcset="images/hero-medium.webp" media="(min-width: 550px)">
             <img src="images/hero-small.webp" alt="" width="513" height="353">
         </picture>
-        <button class="btn-join">Join Chamber</button>
-        <section class="events">
-            
-        </section>
-        <section id="current-weather" class="current-weather">
-            <h2></h2>
-        </section>
-        <section id="forecast">
-            <h2></h2>
-        </section>
-        <div id="directory" class="directory">
+        <div>
+            <a class="btn-learn" aria-label="learn more button" href="#">Elevate your business.<br> Join the Chamber today!</a>
+        </div>
+        </div>
+        
+        <div class="weather-events">
+            <section class="events">
+                <h2>Events</h2>
+                <img src="images/open-house.webp" alt="open house event invitation">
+            </section>
+            <section id="current-weather" class="current-weather">
+                <h2></h2>
+            </section>
+            <section id="forecast" class="forecast">
+                <h2></h2>
+            </section>
+        </div>
+        <div id="directory" class="directory home">
 
         </div>
-        <div>
-            <p>Joining our organization will help your business grow, you will access special benefits and be part of our amazing community. 
-            Click on learn more so you can learn about the perks we offered and our membership levels</p>
-            <button class="btn-learn" aria-label="learn more button">Learn More</button>
-        </div>
+        
     </main>
     <footer>
         <div class="demographics">
