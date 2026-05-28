@@ -252,3 +252,43 @@ footer {
     width: 48px;
     height: auto;
 }
+
+dialog[open] {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    padding: 15px;
+    background-color: var(--text-color);
+    color: var(--primary-text);
+    border-radius: 8px;
+}
+    dialog h3, h4, p {
+        margin: 10px;
+    }
+
+
+dialog::backdrop {
+    background: rgba(0, 0, 0 / 70%);
+}
+
+.close-button {
+    padding: 5px 10px;
+    position: absolute;
+    right: 10px;
+    font-size: 2rem;
+    background-color: var(--verdigris);
+}
+
+.close-button::before {
+    content: "\00D7";
+}
+
+.close-button:hover {
+    background-color: var(--blush-rose);
+    color: var(--text-color);
+}

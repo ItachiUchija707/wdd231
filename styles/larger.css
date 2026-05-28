@@ -69,5 +69,9 @@
         width: 60%;
     }
 
+    dialog[open] {
+        top: 50%;
+    }
+
     
 }

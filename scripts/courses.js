@@ -79,6 +79,7 @@ const courses = [
 ]
 
 const coursesSection = document.querySelector("#courses");
+const dialogContainer = document.querySelector("#course-details");
 
 function FilterCourses(coursesArray) {
     const allCourses = document.querySelector(".all-courses");
@@ -150,7 +151,8 @@ function CreateCoursesTabs(coursesArray) {
     
     coursesArray.forEach(course => {
         const courseName = document.createElement("li");
-        courseName.innerHTML = `${course.subject} ${course.number}`
+        courseName.innerHTML = `${course.subject} ${course.number}`;
+        courseName.addEventListener("click", () => {DisplayCourseDetails(course);});
         if (course.completed) {
             courseName.setAttribute("class", "completed")
         }
@@ -167,6 +169,21 @@ function CreateCoursesTabs(coursesArray) {
     coursesSection.appendChild(totalCredits);
 }
 
+function DisplayCourseDetails(course) {
+    dialogContainer.innerHTML = 
+    `
+            <h3>${course.subject} ${course.number}</h3>
+            <h4>${course.title}</h4>
+            <p>${course.credits}</p>
+            <p>${course.certificate}</p>
+            <p>${course.description}</p>
+            <p>Techonology: ${course.technology}</p>
+            <button class="close-button"></button>
+    `;
+    dialogContainer.showModal();
+    const closeModalButton = document.querySelector(".close-button");
+    closeModalButton.addEventListener("click", () => {dialogContainer.close();});
+}
 
 
 
@@ -192,3 +209,5 @@ window.addEventListener("DOMContentLoaded", () => {
 
     FilterCourses(courses);
 })
+
+
