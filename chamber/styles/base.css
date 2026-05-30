@@ -540,6 +540,10 @@ input:required:valid, select:required:valid {border-left-color: green;}
     color: green;
 }
 
+.memberships h3 {
+    max-width: 80%;
+}
+
 .memberships p, .memberships ul, .memberships h3 {
     margin: 8px;
     list-style: none;
