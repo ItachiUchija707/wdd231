@@ -1,0 +1,66 @@
+{
+    "memberships": [
+       {
+        "level": "Non-Profit",
+        "description": "Designed to support local community organizations, charities, and educational institutions by fostering civic networking without financial barriers.",
+        "cost": "0",
+        "core": "Community Integration & Networking",
+        "benefits": [
+            "Standard, text-only placement inside the local Business Directory structure.", 
+            "Admission for up to two (2) representatives to regular monthly morning networking mixers.",
+            "Access to the Chamber’s standard educational workshops and civic development training paths.",
+            "Eligibility to post volunteer opportunities and donation drives on the Chamber’s public community board."
+        ]
+       },
+       {
+        "level": "Bronze",
+        "description": "Perfect for sole proprietors, startups, and small local businesses looking to establish their market footprint and build brand awareness within the municipal economic zone.",
+        "cost": "250",
+        "core": "Local Visibility & Foundations",
+        "benefits": [
+            "Enhanced Business Directory profile featuring your official company logo, contact tracks, and a backlink to your website.", 
+            "General admission pricing discounts (15% off) for all Chamber-hosted regional business luncheons and keynote speaker events.",
+            "One (1) custom social media introductory welcome post shared across the Chamber's official channels.",
+            "Access to exclusive member-to-member discount sharing networks."
+        ]
+       },
+       {
+        "level": "Silver",
+        "description": "Tailored for growing companies and established mid-sized businesses seeking accelerated marketing avenues and increased corporate outreach opportunities.",
+        "cost": "600",
+        "core": "Marketing Acceleration & Brand Expansion",
+        "benefits": [
+            "Homepage Spotlight Placement: Eligibility to be randomly selected for the home page spotlight cards upon page render.", 
+            "Four (4) complimentary tickets per year to elite executive networking panels or corporate training seminars.",
+            "Quarterly distribution of your company’s press releases or operational milestone updates within the Chamber’s digital newsletter ecosystem.",
+            "Free utilization of the Chamber’s corporate conference room layouts for private stakeholder or client sessions (up to 4 hours monthly)."
+        ]
+       },
+       {
+        "level": "Gold",
+        "description": "The premier tier engineered for market leaders, enterprise operations, and corporate entities looking to maximize civic influence, dominate local advertising, and direct regional economic policy.",
+        "cost": "1200",
+        "core": "Premium Visibility, Civic Influence, & Market Leadership",
+        "benefits": [
+            "Priority Homepage Spotlight Placement: Highest statistical priority weighting inside the asynchronous random fetching loop for home page spotlight displays.", 
+            "Permanent, top-tier featured positioning at the absolute pinnacle of your specific market classification within the main directory array.",
+            "Complimentary, unlimited admission for your entire executive management team to all formal Chamber banquets, galas, and annual award ceremonies.",
+            "Exclusive corporate sponsorship rights for one (1) major community summit or economic networking track per year, including prominent physical signage banners."]
+       }  
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

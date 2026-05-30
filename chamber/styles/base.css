@@ -109,6 +109,7 @@ main h1 {
     font-family: var(--headings-text);
     padding: 0;
     margin-top: 8px;
+    margin-left: 8px;
 }
 
 main picture img {
@@ -419,5 +420,173 @@ footer {
     color: var(--text-color2);
     }
 
-/* ********** call to action section ********* */
+/* ********** join form page styling ********* */
 
+/* form styling */
+
+.application fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0px 10px;
+    border: 3px solid var(--text-color3);
+}
+
+.application label {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-weight: 500;
+}
+
+.application input, .application select {
+    min-height: 44px;
+}
+
+.application legend {
+    font-family: var(--headings-text);
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-weight: 900;
+}
+
+.application input[required], .application select[required] {
+    border-left: 8px solid var(--background-color2);
+}
+
+input:required:valid, select:required:valid {border-left-color: green;}
+
+.application input[placeholder] {
+    padding-left: 5px;
+}
+
+
+.application textarea {
+    height: 80px;
+}
+
+.application .form-button {
+    height: 44px;
+    font-family: var(--headings-text);
+    font-weight: 800;
+    font-size: 1.2rem;
+    background-color: var(--background-color2);
+    color: var(--text-color2);
+    box-shadow: 5px 5px 5px #3A3335;
+}
+
+.form-button:hover {
+    background-color: var(--text-color3);
+    color: var(--background-color1);
+}
+
+/* membership card styling  */
+.membership-levels {
+    margin: 20px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.membership-levels h2 {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--text-color3);
+    width: 100%;
+    border: 3px solid var(--text-color1);
+}
+
+.membership-levels section {
+    display: grid;
+    padding: 20px;
+    border: 3px solid;
+    place-items: center;
+    border-radius: 15px 0px;
+    gap: 10px;
+    background-color: var(--text-color3);
+    animation-name: myAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+.membership-levels section a {
+    height: 44px;
+    width: 50%;
+    background-color: var(--background-color2);
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-color2);
+    text-decoration: none;
+}
+
+/* dialog box for memberships styling */
+
+.memberships {
+    position: fixed;
+    top: 5px;
+    left: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.memberships::backdrop {
+    background: rgba(0, 0, 0 / 100%);
+}
+
+.memberships span {
+    font-weight: 500;
+}
+
+.memberships .annual-cost {
+    color: green;
+}
+
+.memberships p, .memberships ul, .memberships h3 {
+    margin: 8px;
+    list-style: none;
+}
+
+.memberships ul li {
+    padding-top: 5px;
+}
+
+.memberships #close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    height: 44px;
+    width: 44px;
+    font-size: 1.2rem;
+    background-color: var(--text-color3);
+}
+
+/* ****** thank you page styling ******** */
+
+.submission-details {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.thank-you {
+    text-align: center;
+    padding: 10px;
+}
+
+.submission-details span {
+    font-weight: 500;
+}
+
+.submission-details .information {
+    color: var(--background-color2);
+}
+
+/* cards animation */
+
+@keyframes myAnimation {
+    from {opacity: 0;;}
+    to {opacity: 1;;}
+}

@@ -224,4 +224,48 @@
         width: 100%;
     }
 
+    /* ******** join page styling *********** */
+
+    /* form and membership section container styling */
+    .form-membership {
+        display: grid;
+        grid-template-columns: .8fr 1fr;
+        gap: 20px;
+    }
+
+    .membership-levels {
+        margin: 0px;
+    }
+    
+    /* membership dialog box styling */
+
+    .memberships {
+        position: fixed;
+        top: 20%;
+        left: 30%;
+        margin: 10px;
+        padding: 10px;
+        width: 50%;
+    }
+
+    .memberships #close-button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding: 5px;
+        height: 44px;
+        width: 44px;
+        font-size: 1.2rem;
+        background-color: var(--text-color3);
+    }
+
+    /* thank you page styling */
+
+    .submission-details {
+        margin-bottom: 26vh;
+    }
+
+   
+
+    
 }
