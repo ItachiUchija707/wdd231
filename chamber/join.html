@@ -46,7 +46,7 @@
     
     <main>
         <h1>Join Chamber</h1>
-        <div id="form-membership container" class="form-membership container">
+        <div id="form-membership" class="form-membership">
             <form action="thankyou.html" class="application" method="get">
                     <fieldset>
                         <legend>Membership Application Form</legend>
@@ -54,7 +54,7 @@
                         <label for="lName">Last Name <input type="text" name="lName" id="lName" autocomplete="family-name" title="Please enter your last name" required></label>
                         <label for="oTitle">Organization Title <input type="text" name="oTitle" id="oTitle" autocomplete="organization-title" title="Please enter your title within your company which should be at least 7 characters using only letters, hyphens, and spaces." pattern="[A-Za-z\s\-]{7,}" required></label>
                         <label for="email">Email <input type="email" name="email" id="email" autocomplete="email" title="Please enter a valid email address (example: johndoe@email.com)" placeholder="youremail@email.com" required></label>
-                        <label for="phone-number">Mobile Phone Number <input type="tel" name="phone-number" id="phone-number" autocomplete="mobile" title="Please enter your mobile phone-number" required></label>
+                        <label for="phone-number">Mobile Phone Number <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" title="Please enter your mobile phone-number" required></label>
                         <label for="businessName">Business/Organization Name <input type="text" name="businessName" id="businessName" autocomplete="organization" title="Please enter your business name" required></label>
                         <label for="membership-level">Membership level <select name="membership-level" id="membership-level" required>
                         <option value="" disabled selected>Select a membership level...</option>

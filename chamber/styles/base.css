@@ -533,7 +533,7 @@ input:required:valid, select:required:valid {border-left-color: green;}
 }
 
 .memberships::backdrop {
-    background: rgba(0, 0, 0 / 100%);
+    background: rgba(0, 0, 0 / 70%);
 }
 
 .memberships span {
