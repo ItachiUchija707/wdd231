@@ -97,6 +97,7 @@
 
 .navigation a:hover {
     background-color: var(--background-color2);
+    color: var(--text-color2);
 }
 
 .navigation .current {
