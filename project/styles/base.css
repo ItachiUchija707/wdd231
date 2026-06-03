@@ -19,7 +19,6 @@
 body {
     font-family: var(--text-font);
     background-color: var(--sage-background);
-    color: var(--darkcoffe-text);
 }
 
 main {
