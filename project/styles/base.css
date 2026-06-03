@@ -1,0 +1,58 @@
+:root {
+    --lavender-mist: #fCF7FF;
+    --darkblue-text: #14213D;
+    --orange-background: #FCA311;
+    --sage-background: #7CAE7A;
+    --white-text: #FCF7FF;
+    --darkcoffe-text: #251605;
+    --steelazure: #004E89;
+    --headings: "Black Ops One", sans-serif;
+    --subheadings: "Electrolize", sans-serif;
+    --text-font: "Varela Round", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: var(--text-font);
+    background-color: var(--sage-background);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    padding: 10px;
+}
+
+h1 {
+    font-family: var(--headings);
+}
+
+h2 {
+    font-family: var(--subheadings);
+}
+
+img {
+    width: 300px;
+    height: auto;
+    padding: 10px;
+}
+
+footer {
+    background-color: var(--orange-background);
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    margin-left: 0px;
+    border: none;
+}
+
+
+
+
+
