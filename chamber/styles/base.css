@@ -495,22 +495,8 @@ select:required:valid {
 }
 
 /* membership card styling  */
-.membership-levels {
+.membership-levels section {
     margin: 20px 10px 20px 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.membership-levels h2 {
-    text-align: center;
-    padding: 10px;
-    background-color: var(--text-color3);
-    width: 100%;
-    border: 3px solid var(--text-color1);
-}
-
-.membership-levels {
     display: grid;
     padding: 20px;
     border: 3px solid;
@@ -521,6 +507,14 @@ select:required:valid {
     animation-name: myAnimation;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
+}
+
+.membership-levels h2 {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--text-color3);
+    border: 3px solid var(--text-color1);
+    margin: 20px 10px 20px 10px;
 }
 
 .membership-levels section a,
