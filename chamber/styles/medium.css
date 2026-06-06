@@ -1,4 +1,4 @@
-@media only screen and (min-width: 42rem) {
+@media only screen and (min-width: 40rem) {
 
     :root {
         --text-color1: #3A3335;
@@ -15,7 +15,8 @@
         margin: 0 auto;
     }
 
-    main, footer {
+    main,
+    footer {
         max-width: 1000px;
         margin: 0 auto;
     }
@@ -54,7 +55,7 @@
 
     .navigation {
         display: block;
-        
+
     }
 
     .navigation ul {
@@ -72,11 +73,11 @@
         color: var(--text-color1);
     }
 
-    .navigation .current {  
+    .navigation .current {
         border: none;
     }
 
-    .navigation .current {  
+    .navigation .current {
         text-decoration: underline;
         text-decoration-skip-ink: none;
     }
@@ -91,19 +92,18 @@
     }
 
     .directory section {
-    padding: 10px;
-    width: 93%;
-    height: 400px;
-    border: 3px solid var(--background-color1);
-    padding-bottom: 10px;
-    word-break: break-word;
-}
+        padding: 10px;
+        width: 93%;
+        height: 400px;
+        border: 3px solid var(--background-color1);
+        padding-bottom: 10px;
+        word-break: break-word;
+    }
 
     .directory section:last-child {
         width: auto;
         height: auto;
         grid-column: 1 / 4;
-        
     }
 
     .list section {
@@ -145,7 +145,7 @@
     .events {
         margin: 0;
         width: 100%;
-        }
+    }
 
     .events h2 {
         max-height: 44px;
@@ -153,14 +153,14 @@
 
     .events img {
         width: 85%;
-        }
+    }
 
     /* ******* weather section styling  *********** */
 
     .current-weather {
-        width:100%;
+        width: 100%;
         margin: 0;
-        }
+    }
 
     .current-weather img {
         margin: 0 auto;
@@ -174,7 +174,7 @@
         grid-row: 2 / 3;
         line-height: 1.5;
         word-break: break-all;
-        }
+    }
 
     /* forecast section */
 
@@ -190,7 +190,7 @@
 
     .forecast p span {
         font-weight: 500;
-        }
+    }
 
     /* ********** call to action section ********* */
 
@@ -239,7 +239,8 @@
 
     /* membership dialog box styling */
 
-    .memberships {
+    .memberships,
+    .place-details {
         position: fixed;
         top: 20%;
         left: 30%;
@@ -248,7 +249,8 @@
         width: 50%;
     }
 
-    .memberships #close-button {
+    .memberships #close-button,
+    .place-details #close-button {
         position: absolute;
         top: 5px;
         right: 5px;
@@ -265,7 +267,23 @@
         margin-bottom: 26vh;
     }
 
-   
+    /* discovery page styling */
 
-    
+    .places section {
+        grid-template-areas:
+            "picture title"
+            "picture description"
+            "picture description"
+            "address button"
+        ;
+    }
+
+    .places section p {
+        place-self: flex-start;
+    }
+
+    .places img:hover {
+        box-shadow: 0 0 50px var(--text-color1);
+    }
+
 }

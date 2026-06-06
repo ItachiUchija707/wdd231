@@ -1,0 +1,35 @@
+@media only screen and (min-width: 64rem) {
+    body {
+        max-width: none;
+    }
+
+    main,
+    footer {
+        max-width: none;
+    }
+
+    .places {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .places section {
+        grid-template-areas:
+            "title"
+            "description"
+            "picture"
+            "address"
+            "button";
+        min-height: 600px;
+        min-width: 490px;
+    }
+
+    .places section p {
+        place-self: flex-start;
+    }
+
+    .places img {
+        width: 300px;
+    }
+
+}
