@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="XproGamers - Your videogame hub destination. Find your favorite games info and accessories so you enjoy gaming to its best">
+    <meta name="author" content="Axzam Bendeck">
+    <meta property="og:title" content="XproGamers">
+    <meta property="og:description"
+        content="XproGamers - Your videogame hub destination. Find your favorite games info and accessories so you enjoy gaming to its best">
+    <meta property="og:image" content="images/hero-large.webp">
+    <meta property="og:url" content="project/index.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Electrolize&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/index.js" type="module"></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
+    <title>Xpro Gamers</title>
+</head>
+
+<body>
+    <header>
+        <div class="mobile-header">
+            <img src="images/favicon.ico" alt="Xpro Gamers Logo" width="48" height="48">
+            <span>Xpro Gamers</span>
+            <button id="ham-btn" class="" aria-label="close & open button"></button>
+        </div>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="games.html">Games Wiki</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="hero-container">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 550px)">
+                <img src="images/hero-small.webp" alt="xpro gamers logo">
+            </picture>
+        </div>
+
+        <div class="grid-container">
+            <div class="main-content">
+                    <section id="featured-game" class="featured-game"></section>
+                    <div id="products" class="products"></div>
+                    <div class="newsletter-container">
+                        <form action="thankyou.html" class="newsletter" method="get">
+                            <fieldset>
+                                <legend>Newsletter Enrollment</legend>
+                                <label for="fName" class="pInfo">Your Name <input type="text" name="fName" id="fName"
+                                        autocomplete="name" title="Please enter your name" required></label>
+                                <label for="email" class="pInfo">Email <input type="email" name="email" id="email"
+                                        autocomplete="email"
+                                        title="Please enter a valid email address (example: johndoe@email.com)"
+                                        placeholder="youremail@email.com" required></label>
+
+                                <div class="genres">Favorite Games Genres</div>
+                                <div class="favorites">
+                                    <label for="action-genre" class="games-genres"><input type="checkbox" name="genre"
+                                            id="action-genre" value="Action"> Action</label>
+                                    <label for="adventure-genre" class="games-genres"><input type="checkbox"
+                                            name="genre" id="adventure-genre" value="Adventure"> Adventure</label>
+                                    <label for="rpg-genre" class="games-genres"><input type="checkbox" name="genre"
+                                            id="rpg-genre" value="RPG"> RPG</label>
+                                    <label for="strategy-genre" class="games-genres"><input type="checkbox"
+                                            name="genre" id="strategy-genre" value="Strategy"> Strategy</label>
+                                    <label for="puzzle-genre" class="games-genres"><input type="checkbox" name="genre"
+                                            id="puzzle-genre" value="Puzzle"> Puzzle</label>
+                                    <label for="simulation-genre" class="games-genres"><input type="checkbox"
+                                            name="simulation-genre" id="genre" value="Simulation"> Simulation</label>
+                                    <label for="sports-genre" class="games-genres"><input type="checkbox" name="genre"
+                                            id="sports-genre" value="Sports"> Sports</label>
+                                    <label for="racing-genre" class="games-genres"><input type="checkbox" name="genre"
+                                            id="racing-genre" value="Racing"> Racing</label>
+                                    <label for="fighting-genre" class="games-genres"><input type="checkbox"
+                                            name="genre" id="fighting-genre" value="Fighting"> Fighting</label>
+                                    <label for="horror-genre" class="games-genres"><input type="checkbox" name="genre"
+                                            id="horror-genre" value="Horror"> Horror</label>
+                                </div>
+                                <input type="hidden" id="timestamp" name="timestamp">
+                                <input type="submit" aria-label="button to send your newsletter enrollment" value="Sign up"
+                                    class="form-button">
+                            </fieldset>
+                        </form>
+                    </div>
+            </div>
+
+            <div id="top-played" class="top-played"></div>
+            
+        </div>
+
+
+        <dialog id="dialogBox" class="dialogBox"></dialog>
+    </main>
+    <footer>
+        <div class="demographics">
+            <p>Xpro Gamers - Game Station</p>
+            <address>7th Avenue 15th St<br>
+                Tegucigalpa, HN 11011<br>
+                <a href="mailto">gamers@xprogamers.com</a>
+            </address>
+        </div>
+
+        <div class="social-media icons">
+            <a href="#"><img src="images/facebook.svg" alt="facebook icon"></a>
+            <a href="#"><img src="images/twitter-x.svg" alt="twitter-x icon"></a>
+            <a href="#"><img src="images/whatsapp.svg" alt="whatsapp icon"></a>
+        </div>
+        <div class="footer-text">
+            <p>WDD231 Class Project - Axzam Bendeck</p>
+            <a href="attributions.html">Site References</a>
+            <p>© <span id="currentYear"></span> Xpro Gamers - Videogame Hub</p>
+            <p id="lastModified"></p>
+            <p><a href="https://youtu.be/9GnQNvheGGY">Watch my Project Video Presentation</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
