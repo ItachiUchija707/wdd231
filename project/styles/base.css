@@ -49,7 +49,6 @@
 .mobile-header button {
     cursor: pointer;
     background: none;
-    border: none;
     font-size: 2rem;
     position: absolute;
     right: 8px;
@@ -450,7 +449,6 @@ footer {
     display: grid;
     place-items: center;
     padding-top: 20px;
-    border-top: 3px solid var(--steelazure);
     margin-top: 30px;
     gap: 20px;
     background-color: var(--sage-background);
